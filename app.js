@@ -28,7 +28,7 @@ if (process.platform === 'darwin') {
   app.dock.hide();
 }
 
-const autoLauncher = new AutoLaunch({ name: 'Home Assistant Desktop' });
+const autoLauncher = new AutoLaunch({ name: 'Home Assistant Desktop - Clean Edition' });
 
 const indexFile = `file://${__dirname}/web/index.html`;
 const errorFile = `file://${__dirname}/web/error.html`;
@@ -371,7 +371,7 @@ function getMenu() {
     {
       label: 'Open on github.com',
       click: () => {
-        shell.openExternal('https://github.com/iprodanovbg/homeassistant-desktop');
+        shell.openExternal('https://github.com/Devsider/homeassistant-desktop-clean');
       },
     },
     {
