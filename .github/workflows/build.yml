@@ -22,23 +22,23 @@ jobs:
         with:
           node-version: 16
 
-      - name: Build/release macOS Electron app
-        uses: samuelmeuli/action-electron-builder@v1
-        if: runner.os == 'macOS'
-        with:
-          skip_build: true
-          # GitHub token, automatically provided to the action
-          # (No need to define this secret in the repo settings)
-          github_token: ${{ secrets.github_token }}
+#      - name: Build/release macOS Electron app
+#        uses: samuelmeuli/action-electron-builder@v1
+#        if: runner.os == 'macOS'
+#        with:
+#          skip_build: true
+#          # GitHub token, automatically provided to the action
+#          # (No need to define this secret in the repo settings)
+#          github_token: ${{ secrets.github_token }}
 
-          args: "--x64 --arm64"
+#          args: "--x64 --arm64"
 
-          mac_certs: ${{ secrets.mac_certs }}
-          mac_certs_password: ${{ secrets.mac_certs_password }}
+ #         mac_certs: ${{ secrets.mac_certs }}
+  #        mac_certs_password: ${{ secrets.mac_certs_password }}
 
           # If the commit is tagged with a version (e.g. "v1.0.0"),
           # release the app after building
-          release: ${{ startsWith(github.ref, 'refs/tags/v') }}
+#          release: ${{ startsWith(github.ref, 'refs/tags/v') }}
 
       - name: Build/release Windows Electron app
         uses: samuelmeuli/action-electron-builder@v1
@@ -50,9 +50,6 @@ jobs:
           github_token: ${{ secrets.github_token }}
 
           args: "--ia32 --x64 --arm64"
-
-          mac_certs: ${{ secrets.mac_certs }}
-          mac_certs_password: ${{ secrets.mac_certs_password }}
 
           # If the commit is tagged with a version (e.g. "v1.0.0"),
           # release the app after building
