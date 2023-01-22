@@ -1,4 +1,4 @@
-##Changes by Me
+## Changes by Me
 - Icon to a Flat, Windows 10 Bar Style Icon that doesn't stand out like the blue Homeassistant Logo does.
 - Nothing more. Well also a clone incase the original gets deleted - again.
 
