@@ -1,3 +1,7 @@
+##Changes by Me
+- Icon to a Flat, Windows 10 Bar Style Icon that doesn't stand out like the blue Homeassistant Logo does.
+- Nothing more. Well also a clone incase the original gets deleted - again.
+
 # Home Assistant - Desktop
 
 Desktop App (Windows / macOS / Linux) for [Home Assistant](https://www.home-assistant.io/) built with [Electron](https://www.electronjs.org)
